@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-ReactDOM.render(
-  <h1> First project using react </h1>,
-  document.getElementById('root')
-);
+setInterval(function () {
+  ReactDOM.render(
+    <h2>Time now: {new Date().toLocaleTimeString()}</h2>,
+    document.getElementById('root')
+  );
+}, 1000);
